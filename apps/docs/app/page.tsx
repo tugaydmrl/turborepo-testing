@@ -1,6 +1,6 @@
 import Image, { type ImageProps } from "next/image";
-import { Button } from "@repo/ui/button";
 import styles from "./page.module.css";
+import { Code } from "@repo/ui/code";
 
 type Props = Omit<ImageProps, "src"> & {
   srcLight: string;
@@ -35,7 +35,9 @@ export default function Home() {
           <li>
             Get started by editing <code>apps/docs/app/page.tsx</code>
           </li>
-          <li>Save and see your changes instantly.</li>
+          <li>
+            <Code>Save and see your changes instantly.</Code>
+          </li>
         </ol>
 
         <div className={styles.ctas}>
@@ -63,9 +65,6 @@ export default function Home() {
             Read our docs
           </a>
         </div>
-        <Button appName="docs" className={styles.secondary}>
-          Open alert
-        </Button>
       </main>
       <footer className={styles.footer}>
         <a
