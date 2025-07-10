@@ -12,7 +12,7 @@ export const Editor = ({ children, className }: EditorProps) => {
     <div
       className={className}
       style={{
-        backgroundColor: "aqua",
+        backgroundColor: "red",
         color: "white",
         padding: "8px",
         marginLeft: "8px",
