@@ -17,6 +17,7 @@ export const Editor = ({ children, className }: EditorProps) => {
         padding: "8px",
         marginLeft: "8px",
         width: "200px",
+        height: "40px",
       }}
     >
       {children}
