@@ -9,7 +9,12 @@ export function Code({
 }): JSX.Element {
   return (
     <code
-      style={{ backgroundColor: "green", padding: "5px", borderRadius: "5px" }}
+      style={{
+        backgroundColor: "green",
+        padding: "5px",
+        borderRadius: "5px",
+        marginLeft: "4px",
+      }}
       className={className}
     >
       {children}
